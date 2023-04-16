@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MVC Pattern - Actions</title>
+  </head>
+  <body>
+    <h1>Action Section</h1>
+    <ul>
+      {% for action in actions %}
+        <a href="{{ url_for('action.edit', action_id=action['id']) }}">
+          <li>{{ action["name"] }}</li>
+        </a>
+      {% endfor %}
+    </ul>
+    <span>
+      <a href="{{ url_for('index') }}">
+        <h3>Go Start</h3>
+      </a>
+    </span>
+    <span>
+      <a href="{{ url_for('user.index') }}">
+        <h3>User Section</h3>
+      </a>
+    </span>
+  </body>
+</html>
