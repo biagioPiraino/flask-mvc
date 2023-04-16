@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MVC Pattern - Users</title>
+  </head>
+  <body>
+    <h1>User Section: {{ user['name'] }}</h1>
+    <h3>Details:</h3>
+    <div>
+      <label>Id: {{ user['id'] }}</label>
+    </div>
+    <div>
+      <label>Name: {{ user['name'] }}</label>
+    </div>
+    <a href="{{ url_for('user.index') }}"><h3>Go Back</h3></a>
+  </body>
+</html>
