@@ -1,2 +1,2 @@
-# flask-mvc
-Develop a minimal Flask Application using MVC design pattern
+# Flask MVC
+Develop a minimal <b>Flask</b> Application using <b>MVC design pattern</b>.
